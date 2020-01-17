@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+// initial code
+/* import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'taskboxwithstorybook53';
+}
+ */
+
+// updated code for screen section
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <app-inbox-screen></app-inbox-screen>
+  `
+})
+export class AppComponent {
+  title = 'taskbox';
 }

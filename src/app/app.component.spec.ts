@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+/* import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -27,5 +27,16 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('taskboxwithstorybook53 app is running!');
+  });
+});
+ */
+
+import { render } from '@testing-library/angular';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  it('should render the component', async () => {
+    const { getByText } = await render(AppComponent);
+    expect(getByText('Welcome'));
   });
 });
